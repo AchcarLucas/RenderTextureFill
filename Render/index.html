@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>Render</title>
+		
+		<script src="../modules/jquery/jquery-3.2.0.min.js"></script>
+		<script src="../modules/mathjs-master/dist/math.min.js"></script>
+		<script src="global_var.js"></script>
+		<script src="canvas.js"></script>
+		<script src="matrix.js"></script>
+		<script src="math.js"></script>
+		<script src="render.js"></script>
+		<script src="main.js"></script>
+		<script src="update.js"></script>
+		<script src="draw.js"></script>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<canvas id="canvas" width="640" height="360">
+		Your browser does not support the HTML5 canvas tag.</canvas>
+		<label for="fps_controller">FPS Controller</label>
+		<input type="range" id="fps_controller" max="60" min="10" value="30">
+		<output name="fps_range" id="fps_range">30 FPS</output>
+		</input>
+		
+		<div>
+			<span>Loading Texture</span>
+			<input type="file" id="texture" name="texture">
+		</div>
+		
+		<div>
+			<span>Loading Object</span>
+			<input type="file" id="input_open" name="input_open" class="input_file">
+		</div>
+		
+		<div>
+			<label for="auto_rotation">Rotação Automática</label>
+			<input type="button" id="auto_rotation" name="auto_rotation" value="Desativado"></input>
+		</div>
+		
+		<div>
+			<label for="view_mode">Projeção</label>
+			<input type="button" id="view_mode" name="view_mode" value="Perspectiva"></input>
+		</div>
+		
+		<div>
+			<label for="view_mode">Wireframe</label>
+			<input type="button" id="wireframe" name="wireframe" value="Desativado"></input>
+		</div>
+		
+		<div>
+			<label for="position">POSITION</label>
+			<input type="text" id="pos_x" name="position" value="0"> X</input>
+			<input type="text" id="pos_y" name="position" value="0"> Y</input>
+			<input type="text" id="pos_z" name="position" value="0"> Z</input>
+			<input type="button" id="position" name="position" value="Apply"></input>
+		</div>
+		
+		<div>
+			<label for="scale">SCALE</label>
+			<input type="text" id="scale_x" name="scale" value="1"> X</input>
+			<input type="text" id="scale_y" name="scale" value="1"> Y</input>
+			<input type="text" id="scale_z" name="scale" value="1"> Z</input>
+			<input type="button" id="scale" name="scale" value="Apply"></input>
+		</div>
+		
+		<div>
+			<label for="rotation">ROTATION</label>
+			<input type="text" id="rotation_x" name="rotation" value="0"> X</input>
+			<input type="text" id="rotation_y" name="rotation" value="0"> Y</input>
+			<input type="text" id="rotation_z" name="rotation" value="0"> Z</input>
+			<input type="button" id="rotation" name="rotation" value="Apply"></input>
+		</div>
+	</body>
+</html>

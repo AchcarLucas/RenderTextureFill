@@ -5,8 +5,8 @@ body{
 }
 
 #canvas{
-	width:640px;
-	height:360px;
+	width:800px;
+	height:600px;
 	background:#fff;
 	display:block;
 }

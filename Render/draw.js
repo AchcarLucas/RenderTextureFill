@@ -27,8 +27,8 @@ function processScanLine(data, pa, pb, pc, pd){
 		var u = Interpolate(startU, endU, gradient);
         var v = Interpolate(startV, endV, gradient);
 		
-		var _x = Math.abs(parseInt(x) % canvas.width);
-		var _y = Math.abs(parseInt(data.y) % canvas.height);
+		var _x = parseInt(x);
+		var _y = data.y;
 		
 		rgba = Map(u, v);
 		var z_deep = deepBuffer[_x][_y];
